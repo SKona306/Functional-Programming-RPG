@@ -1,3 +1,70 @@
 body {
   background-color: peachpuff;
 }
+
+.banner {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75em;
+}
+
+.playerCreation {
+  display:flex;
+  flex-direction: column;
+}
+
+#startImg {
+  width: auto;
+  height:300px;
+  margin-bottom: 1em;
+}
+
+#charSubmit {
+  margin-top:0.25em;
+}
+
+#statsPage {
+  display:none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  list-style-position: inside;
+}
+
+#currentStats {
+  border: 1px solid black;
+  background: lightskyblue;
+  width:auto;
+
+}
+
+#restingGameImg {
+  width:auto;
+  height: 260px;
+}
+
+#walkingGameBoard {
+  display:none;
+}
+
+#actionGameBoard {
+  display:none;
+}
+
+
+#actionGameImg {
+  width:auto;
+  height: 260px;
+}
+
+#gameOver {
+  display:none;
+}
