@@ -1,5 +1,76 @@
+<html lang="en-US">
 <head>
-  <title>jsEnvTemplate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Grand Adventures of Epicodus</title>
 </head>
 <body>
+
+
+  <div class="container-fluid gameBoard">
+    <div class="banner">
+      <h1 id="title">Epicodus Adventures</h1>
+      <img id="startImg" src="../assets/img/shutterstock_687437983.jpg" alt="">
+      <form class="playerCreation">
+        <label for="charName">Name:</label>
+        <input type="text" id="charName">
+        <label for="charType">Choose a character Type:</label>
+        <select id="charType" name="types">
+          <option value="0">Wizard: Magic</option>
+          <option value="1">Knight: Strength</option>
+          <option value="2">Conquerer: Balanced</option>
+          <option value="3">Elf: Defense</option>
+        </select>
+        <button id="charSubmit" type="submit">Create Player</button>
+      </form>
+    </div>
+
+
+    <div id="statsPage">
+      <h1 id="nameBanner"></h1>
+      <div id="playerStats">
+        <ul id="currentStats">
+        </ul>
+      </div>
+      <button id="start">Start Adventure!</button>
+      <details class="rules">
+        <summary>Rules:</summary>
+        <ol>
+            <li>Create character</li>
+            <li>Help your character traverse the lands</li>
+            <li>Fight monsters with random encounters</li>
+            <li>Healing recovers 30% HP</li>
+            <li>Sleep recovers 100% HP</li>
+            <li>Only the strong survive</li>
+        </ol>
+    </details>
+    </div>
+
+    <div id="walkingGameBoard">
+      <img src="../assets/img/shutterstock_1681406443.jpg" id="restingGameImg">
+      <div class="restingButtons">
+        <button id="walk">Walk</button>
+        <button id="heal">Heal</button>
+        <button id="sleep">Sleep</button>
+      </div>
+    </div>
+
+    <div id="actionGameBoard">
+      <div id="enemyStats">
+        <ul id="currentEnemyStats"></ul>
+      </div>
+      <img src="../assets/img/shutterstock_1928273135.jpg" id="actionGameImg">
+      <div class="fightingButtons">
+        <button id="attack">Attack</button>
+        <button id="potion">UsePotion</button>
+        <button id="flee">Flee</button>
+      </div>
+    </div>
+
+    <div id="gameOver">
+      <h1 id="charName"></h1>
+      <h3>Game Over!</h3>
+    </div>
+  </div>
 </body>
+</html>
